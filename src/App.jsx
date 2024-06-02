@@ -23,13 +23,7 @@ function App() {
         setUser(null);
       }
     });
-return (
-    <div>
-      {/* Other components */}
-      <Messages />
-    </div>
-  );
-}
+
     return () => unsubscribe(); // Unsubscribe when the component unmounts
   }, []);
 
