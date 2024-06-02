@@ -4,7 +4,7 @@ import { HiMenu } from "react-icons/hi";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Link, Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import logo from "../assets/assets/social-logo.png";
+import logo from "../assets/assets/social-space-logo.png";
 
 const SideBar = React.lazy(() => import("../Components/SideBar"));
 const UserProfile = React.lazy(() => import("../Components/UserProfile"));
