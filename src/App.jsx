@@ -4,8 +4,6 @@ import { Suspense } from "react";
 import ProtectedRoute from "./Utils/ProtectedRoute";
 import Spinner from "./Components/Spinner";
 import { auth } from "./firebaseConfig";
-import React from "react";
-import Messages from "./Components/Messages";
 
 const Login = React.lazy(() => import("./Components/Login"));
 const Home = React.lazy(() => import("./Containers/Home"));
