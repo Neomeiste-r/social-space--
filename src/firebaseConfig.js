@@ -11,17 +11,16 @@ import "firebase/storage";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA3IZTXzKBuMLD9Rar4RPihl99gHfk6HBg",
-  authDomain: "final-media2.firebaseapp.com",
-  databaseURL:
-    "https://final-media2-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "final-media2",
-  storageBucket: "final-media2.appspot.com",
-  messagingSenderId: "101454148297",
-  appId: "1:101454148297:web:9fbb9c8c7258b1ee7d9318",
-  measurementId: "G-VK0Z0LX6WX",
+  apiKey: "AIzaSyDrN59eJWd1SFJ2khU33wCVsDRhoxlNo1M",
+  authDomain: "fyp11-425219.firebaseapp.com",
+  projectId: "fyp11-425219",
+  storageBucket: "fyp11-425219.appspot.com",
+  messagingSenderId: "852052393749",
+  appId: "1:852052393749:web:21224797cb2f5ae767331c"
 };
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 // Initialize Firebase
 const firebase = initializeApp(firebaseConfig);
 const storage = getStorage(firebase);
