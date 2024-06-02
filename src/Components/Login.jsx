@@ -50,7 +50,7 @@ function Login() {
         <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0    bg-blackOverlay">
           <div className="p-5 gap-1 flex justify-center items-center">
             <img src={logo} width="90px" alt="logo" />
-            <h1 className="text-xl">My Media</h1>
+            <h1 className="text-xl">Social Space</h1>
           </div>
 
           <div className="shadow-2xl">
