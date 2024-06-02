@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import shareVideo from "../assets/assets/share.mp4";
-import logo from "../assets/assets/logo_pic1.png";
+import logo from "../assets/assets/social-space-high-resolution-logo.png";
 import { GoogleAuthProvider } from "firebase/auth";
 import { signInWithPopup } from "firebase/auth";
 import { auth, database } from "../firebaseConfig";
