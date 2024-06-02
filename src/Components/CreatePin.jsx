@@ -162,25 +162,24 @@ function CreatePin({ user }) {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mt-5 lg:h-4/5 overflow-hidden">
+    <div className="flex flex-col justify-center items-center mt-5 lg:h-[90vh] overflow-hidden">
       {fields && (
         <p className="text-red-500 mb-5 text-xl transition-all duration-150 ease-in ">
           Please add all fields.
         </p>
       )}
       <motion.div
-        className=" flex lg:flex-row flex-col justify-center items-center bg-[#B93131] lg:p-5 p-3 lg:w-4/5  w-full"
+        className=" flex lg:flex-row flex-col justify-center items-center bg-[#B93131] lg:p-5 p-3 lg:w-4/5  w-full lg:min-h-[80%] "
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-      >
-        <div className="bg-black text-white p-3 flex flex-0.7 w-full">
-          <div className=" flex justify-center items-center flex-col border-2 border-dotted border-red-500 p-3 w-full h-420">
+        transition={{ duration: 0.6, delay: 0.5 }}>
+        <div className="bg-black lg:h-[90%] 2xl:h-full text-white p-3 flex flex-0.7 w-full">
+          <div className="  flex justify-center items-center flex-col border-2 border-dotted border-red-500 p-3 w-full h-420">
             {loading && <Spinner />}
             {wrongImageType && <p>It&apos;s wrong file type.</p>}
             {!imageUrl ? (
               <label>
-                <div className="flex flex-col items-center justify-center h-full ">
+                <div className="flex flex-col items-center justify-center h-full  ">
                   <div className="flex flex-col justify-center items-center">
                     <p className="font-bold text-2xl">
                       <AiOutlineCloudUpload />
@@ -210,8 +209,7 @@ function CreatePin({ user }) {
                 <button
                   type="button"
                   className="absolute bottom-3 right-3 p-3 rounded-full bg-black text-xl cursor-pointer outline-none hover:shadow-md transition-all duration-500 ease-in-out"
-                  onClick={() => setImageUrl(null)}
-                >
+                  onClick={() => setImageUrl(null)}>
                   <MdDelete />
                 </button>
               </div>
@@ -257,8 +255,7 @@ function CreatePin({ user }) {
                 onChange={(e) => {
                   setCategory(e.target.value);
                 }}
-                className="outline-none w-4/5 text-base border-b-2 bg-black border-red-800 text-white p-2 rounded-md cursor-pointer"
-              >
+                className="outline-none w-4/5 text-base border-b-2 bg-black border-red-800 text-white p-2 rounded-md cursor-pointer">
                 <option value="others" className="sm:text-bg bg-black">
                   Select Category
                 </option>
@@ -267,8 +264,7 @@ function CreatePin({ user }) {
                     key={item.name}
                     className="text-base border-0 outline-none capitalize bg-black text-white "
                     value={item.name}
-                    id={uuidv4()}
-                  >
+                    id={uuidv4()}>
                     {item.name}
                   </option>
                 ))}
@@ -278,8 +274,7 @@ function CreatePin({ user }) {
               <button
                 type="button"
                 onClick={savePin}
-                className="bg-red-500 text-white font-bold p-2 rounded-full w-28 outline-none"
-              >
+                className="bg-red-900 text-white font-bold p-2 rounded-full w-28 outline-none">
                 Save Pin
               </button>
             </div>
@@ -291,3 +286,4 @@ function CreatePin({ user }) {
 }
 
 export default CreatePin;
+
