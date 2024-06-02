@@ -23,7 +23,7 @@ function SideBar({ closeToggle, user }) {
           onClick={handleCloseSidebar}
         >
           <img src={logo} alt="logo" className="w-[50%]" />
-          <h1 className="text-white">My Media</h1>
+          <h1 className="text-white">Social Space</h1>
         </Link>
         <div className="flex flex-col gap-5">
           <NavLink
