@@ -13,6 +13,7 @@ import { getStorage } from "firebase/storage";
 const firebaseConfig = {
   apiKey: "AIzaSyDrN59eJWd1SFJ2khU33wCVsDRhoxlNo1M",
   authDomain: "fyp11-425219.firebaseapp.com",
+  databaseURL: "https://fyp11-425219-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "fyp11-425219",
   storageBucket: "fyp11-425219.appspot.com",
   messagingSenderId: "852052393749",
